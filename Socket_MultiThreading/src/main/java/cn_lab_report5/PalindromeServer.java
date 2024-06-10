@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cn_lab_report5;
+package Socket_MultiThreading.src.main.java.cn_lab_report5;
 
 import java.io.*;
 import java.net.*;
@@ -61,14 +61,18 @@ class ClientHandler extends Thread {
     }
 
     private boolean isPalindrome(String str) {
-        String cleanedStr = str.replaceAll("\\s+", "").toLowerCase();
-        int len = cleanedStr.length();
-        for (int i = 0; i < len / 2; i++) {
-            if (cleanedStr.charAt(i) != cleanedStr.charAt(len - 1 - i)) {
-                return false;
-            }
+        String reverseStr = "";
+    
+        int strLength = str.length();
+    
+        for (int i = (strLength - 1); i >=0; --i) {
+          reverseStr = reverseStr + str.charAt(i);
         }
-        return true;
+         if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
+            return true;
+          }
+          else 
+            return false;
     }
 }
 

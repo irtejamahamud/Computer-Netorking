@@ -1,5 +1,5 @@
 
-package cn_lab_report5;
+package Socket_MultiThreading.src.main.java.cn_lab_report5;
 
 import java.io.*;
 import java.net.*;

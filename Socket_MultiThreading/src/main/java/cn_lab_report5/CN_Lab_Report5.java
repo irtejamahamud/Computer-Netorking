@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package cn_lab_report5;
+package Socket_MultiThreading.src.main.java.cn_lab_report5;
 
 /**
  *
